@@ -1,12 +1,10 @@
 /**
  * @type {import('postcss').PluginCreator}
  */
-module.exports = (opts = {}) => {
-  // Work with options here
-
+module.exports = () => {
   return {
     postcssPlugin: "postcss-plugin-remove-important",
-    Root(root, postcss) {
+    Root(root) {
       root.walkDecls((decl) => {
         decl.important = false;
       });

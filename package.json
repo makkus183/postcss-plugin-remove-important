@@ -1,6 +1,6 @@
 {
   "name": "postcss-plugin-remove-important",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PostCSS plugin Remove important statements",
   "keywords": ["postcss", "css", "postcss-plugin", "postcss-plugin-remove-important"],
   "scripts": {

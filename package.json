@@ -1,0 +1,34 @@
+{
+  "name": "postcss-plugin-remove-important",
+  "version": "0.0.0",
+  "description": "PostCSS plugin Remove important statements",
+  "keywords": ["postcss", "css", "postcss-plugin", "postcss-plugin-remove-important"],
+  "scripts": {
+    "unit": "uvu . '\\.test\\.js$'",
+    "test": "npm run unit && eslint ."
+  },
+  "author": "Markus Bruns <bruns@kontrollfeld.de>",
+  "license": "MIT",
+  "repository": "makkus183/postcss-plugin-remove-important",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.27"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "postcss": "^8.4.27",
+    "uvu": "^0.5.6"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": ["eslint:recommended"]
+  }
+}

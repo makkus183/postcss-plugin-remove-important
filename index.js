@@ -5,12 +5,13 @@ module.exports = (opts = {}) => {
   // Work with options here
 
   return {
-    postcssPlugin: 'postcss-plugin-remove-important',
-    /*
-    Root (root, postcss) {
+    postcssPlugin: "postcss-plugin-remove-important",
+    Root(root, postcss) {
+      root.walkDecls((decl) => {
+        decl.important = false;
+      });
       // Transform CSS AST here
-    }
-    */
+    },
 
     /*
     Declaration (decl, postcss) {
@@ -25,7 +26,7 @@ module.exports = (opts = {}) => {
       }
     }
     */
-  }
-}
+  };
+};
 
-module.exports.postcss = true
+module.exports.postcss = true;
